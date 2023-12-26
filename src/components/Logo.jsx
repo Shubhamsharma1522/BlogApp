@@ -1,9 +1,12 @@
 import React from 'react'
+import img1 from './Images/BlogApp Logo.png'
 
 function Logo() {
-  return (
-  <img className='h-20' src="/BlogApp Logo.png" alt="Blog Logo" />
-  )
+  return <div>
+   <img className='w-20 h-20' src={img1} alt="BlogLogo" />
+    </div>
+
+  
 }
 
 export default Logo
