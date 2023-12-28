@@ -1,22 +1,24 @@
 import React from "react";
 
 export default function Button({
-    children,
-    type = "button",
-    bgColor = "bg-red-500",
-    textColor = "text-white",
-    className = "",
-     //children easy use in pass in return html
-    ...props
+  children,
+  type = "button",
+  bgColor = "bg-red-500",
+  textColor = "text-white",
+  className = "",
+  //children easy use in pass in return html
+  ...props
 }) {
-    return (
-          //don't use backtiks without curly brackets because it's javascript syntax
-        <button className={`px-4 py-2 rounded-lg ${bgColor} ${textColor} ${className}`} {...props}>
-            {children}
-        </button>
-    );
+  return (
+    //don't use backtiks without curly brackets because it's javascript syntax
+    <button
+      className={`px-4 py-2 rounded-lg ${bgColor} ${textColor} ${className}`}
+      {...props}
+    >
+      {children}
+    </button>
+  );
 }
-
 
 /* forward ref => hm apna ek loggin form bna rhe hai apna,us loggin form me  input field alg hai, wahi same input field hm username me password me sb jgeh use krenge..or kahi or loggin page hai, lekin input field ki state ka access mujhe loggin page pr chahiye hoga na..to iski state ka reference mujhe dena pdega loggin page ke ander...esliye use hota hai forward reference...
 in english
