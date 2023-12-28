@@ -11,7 +11,7 @@ const Input = React.forwardRef( function Input({
         <div className='w-full'>
             {label && <label 
             className='inline-block mb-1 pl-1' 
-            //accessibility purpose use for id in htmlFor 
+              //accessibility purpose use for id in htmlFor 
             htmlFor={id}>
                 {label}
             </label>

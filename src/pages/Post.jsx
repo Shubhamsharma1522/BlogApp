@@ -21,7 +21,7 @@ export default function Post() {
                 else navigate("/");
             });
         } else navigate("/");
-    }, [slug, navigate]);
+    }, [slug,  navigate]);
 
     const deletePost = () => {
         appwriteService.deletePost(post.$id).then((status) => {
@@ -32,7 +32,7 @@ export default function Post() {
         });
     };
 
-    return post ? (
+    return post ?(
         <div className="py-8">
             <Container>
                 <div className="w-full flex justify-center mb-4 relative border rounded-xl p-2">
@@ -63,5 +63,5 @@ export default function Post() {
                     </div>
             </Container>
         </div>
-    ) : null;
+    ):null;
 }

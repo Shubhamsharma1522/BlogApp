@@ -9,7 +9,8 @@ const initialState = {
 const authSlice = createSlice({
     name: "auth",
     initialState,
-    //reducers are a object. state and action access in reducers
+
+       //reducers are a object. state and action access in reducers
     reducers: {
         login: (state, action) => {
             state.status = true;
